@@ -1,5 +1,6 @@
-function ubfim(inp) {
-    let out = ''; // put your code here
+function ubfim() {
+    let inp = document.getElementById('inp').value;
+    let out = ''; 
     let stdin = '', pos = 0; // manual input and position
     let mem = [], pnt = 2;
     for (let l1 = 0; l1 < 11; l1++) mem.push(false);
@@ -52,7 +53,6 @@ function ubfim(inp) {
             if (mem[pnt]) cur = 0;
         }
     }
-
-    console.log(mem);
-    console.log(out);
+    
+    document.getElementById('out').value = out
 }
